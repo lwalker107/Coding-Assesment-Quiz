@@ -8,11 +8,47 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section>
+    <section id="start">
         <p>
             This is where we start the quiz!
         </p>
-        <button onclick="location.href='section2_index.html'">Start quiz</button>
+        <button id="begin_quiz">Start quiz</button>
+    </section>
+    <section id="question" class="hide">
+        <p id="Timer"></p>
+        <h1 id="main_question">   
+        </h1>
+        <ul>
+            <button id="option1">   
+            </button>
+            <button id="option2">   
+            </button>
+            <button id="option3">
+            </button>
+            <button id="option4">
+            </button>
+        </ul>
+    </section>
+    <section id="end" class="hide">
+        <p id="score"></p>
+        <h1>
+            Initials Here:
+        </h1>
+        <input id="initials">
+        <button id="initials_button">
+            Save 
+        </button>
+    </section>
+    <section id="highscore_page" class="hide">
+        <h1>
+            Highscore
+        </h1>
+        <button id="clear_button">
+            clear
+        </button>
+        <button id="restart_button">
+            restart
+        </button>
     </section>
     <script src="./challenge.js"></script>
 </body>
