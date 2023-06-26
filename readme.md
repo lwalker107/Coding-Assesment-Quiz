@@ -1,7 +1,7 @@
 # Coding Assessment
 
 ## Description: 
-Write description here
+A Javascript coding quiz with a timer and multiple choice answers. Includes dynamically updated html and css with a clean, polished, and responsive user interface.
 
 ## Screenshot:
 ![screenshot](./assessment_screenshot.PNG)
