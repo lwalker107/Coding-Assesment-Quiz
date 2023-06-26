@@ -116,4 +116,20 @@ document.getElementById("initials_button").addEventListener("click", function(){
     var scores = JSON.parse(localStorage.getItem("score"))||[]
     scores.push({time, initials})
     localStorage.setItem("score", JSON.stringify(scores))
+    document.getElementById("end").style.display="none"
+    document.getElementById("highscore_page").style.display="block"
+    for(var i=0; i < scores.length; i++){
+        var scoreEl = document.createElement("p")
+        scoreEl.innerText = scores[i].initials + " " + scores[i].time
+        document.getElementById("highscores").appendChild(scoreEl)
+    }
+})
+
+document.getElementById("clear_button").addEventListener("click", function(){
+    localStorage.clear()
+    document.getElementById("highscores").innerHTML=""
+})
+
+document.getElementById("restart_button").addEventListener("click", function(){
+    window.location.reload()
 })
